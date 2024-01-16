@@ -1,2 +1,2 @@
 # Environmental-website
-Collaboratively created a enviromental website enhancing my frontend skills and creating awarness in society about sustainability.
+Collaboratively created an enviromental website enhancing my frontend skills and creating awarness in society about sustainability.
