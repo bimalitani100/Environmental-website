@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="icon"
+        href="https://img.freepik.com/free-vector/eco-green-leaf-logo-negative-space-style_126523-780.jpg?size=626&ext=jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .subscription-form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:lightgreen;
+            border: 1px solid lightgreen;
+        }
+
+        .subscription-form h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .subscription-form input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .subscription-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .subscription-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .subscription-form .pricing-table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .subscription-form .pricing-table tr {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .subscription-form .pricing-table td {
+            padding: 10px;
+        }
+
+        .subscription-form .pricing-table .feature {
+            font-weight: bold;
+        }
+
+        .subscription-form .pricing-table .price {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sustainable <span>Living </span>Hub</h1>
+    <div class="left"><img src="background.png" height="100px" width="170px">
+
+    </div>
+
+
+
+    <div id="menu-nav">
+        <div id="navigation-bar">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="store.html"><i class="fa fa-handshake"></i><span>Store</span></a></li>
+                <li><a href="join.html"><i class="fa fa-user"></i><span>Join</span></a></li>
+                <li><a href="form.html"><i class="fa fa-book"></i><span>Newsletter</span></a></li>
+
+            </ul>
+        </div>
+    </div>
+    <button class="toggle-dark-mode">Toogle Dark Mode</button>
+
+    <div class="subscription-form">
+        <h2>Subscription Plan</h2>
+
+        <input type="text" name="name" placeholder="FullName (required)" id="name">
+        <input type="email" name="email" placeholder="Email (required)" id="email">
+
+        <select name="subscription_plan" id="subscription plan">
+            <option value="free">Free</option>
+            <option value="pro">Pro ($9.99/month)</option>
+            <option value="ultimate">Ultimate ($19.99/month)</option>
+        </select>
+
+        <button type="submit">Subscribe</button>
+        <table>
+            <tr>
+                <th class="feature">Feature</th>
+                <th class="feature">Free</th>
+                <th class="feature">Pro</th>
+                <th class="feature">Ultimate</th>
+            </tr>
+            <tr>
+                <td>Basic features</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Unlimited access to content and features</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Priority support</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Monthly newsletter</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Exclusive content and features</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Early access to new features</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Dedicated support</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>$0/month</td>
+                <td>$9.99/month</td>
+                <td>$19.99/month</td>
+            </tr>
+        </table>
+        /div>
+    </div>
+    <footer>&copy;Sustainable living Hub</footer>
+    <script src="script.js"></script>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

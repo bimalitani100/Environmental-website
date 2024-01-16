@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* Apply some basic styling */
+
+        .Container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            /* Adjust the blur value as needed */
+            background: rgba(255, 255, 255, 0.1);
+            /* Adjust the alpha value for transparency */
+            border-radius: 10px;
+
+
+            width: 100%;
+            /* border: 2px solid red; */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .error {
+            border: 2px solid red;
+            background-color: red;
+            color: black;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .Gender {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        Gender span {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Make the form responsive */
+        @media screen and (max-width: 600px) {
+            .Container {
+                max-width: 90%;
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: lightsteelblue;
+            color: black;
+            text-align: center;
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #thanks-modal-content {
+            width: 20rem;
+        }
+
+        #modal-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sustainable <span>Living </span>Hub</h1>
+    <div class="left"><img src="background.png" height="100px" width="170px">
+    </div>
+    <div id="menu-nav">
+        <div id="navigation-bar">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="store.html"><i class="fa fa-handshake"></i><span>Store</span></a></li>
+                <li><a href="join.html"><i class="fa fa-user"></i><span>Join</span></a></li>
+                <li><a href="form.html"><i class="fa fa-book"></i><span>Newsletter</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <button class="toggle-dark-mode">Toogle Dark Mode</button>
+
+    <div class="modal" id="thanks-modal">
+        <div class="modal-content animate" id="thanks-modal-content">
+            <div id="modal-text-container">
+                <img src="https://imgs.search.brave.com/m5CmjhNzb8WxiOJ38yO2eiX-M4tA9OHpmt4omiJIXiE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTgz/ODc3Mzk0L3Bob3Rv/L3RoYW5rLXlvdS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/NG9ETGVZSkF2RVhj/aGt0bXdzSVBQTlBs/b2VBT0FXblJ0ZW5V/NC1ma0R0ND0"
+                    alt="Thank You Image" width="200px" height="200px">
+                <p>Thank you for subscribing to our Newsletter!</p>
+                <button id="closeButton">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="Container">
+        <form id="registration-form">
+            <h2>Subscribe to our Newsletter</h2>
+            <label for="name">Name:</label>
+
+            <input type="Text" placeholder="Enter Your Name (both first and last)" id="name" autocomplete="off" class="box">
+
+            <label for="username">Username:</label>
+
+            <input type="text" placeholder="Enter your username" id="username" autocomplete="off" class="box">
+
+            <label for="password">Password:</label>
+
+            <input type="password" placeholder="Enter your password" id="password" autocomplete="off" class="box">
+
+            <label for="confirm">Confirm Password:</label>
+
+            <input type="password" placeholder="Confirm your Password" id="confirm" autocomplete="off" class="box">
+
+            <label for="email">Email:</label>
+
+            <input type="text" placeholder="Enter your Email" id="email" autocomplete="off" class="box">
+
+            <input class="btn" type="submit" value="Submit">
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
